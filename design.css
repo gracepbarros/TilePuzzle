@@ -1,0 +1,75 @@
+* {
+   box-sizing: border-box;
+}
+
+ html { height: 100% }
+ body {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 1em;
+    background: linear-gradient(180deg,  #859db5 0%,  #d3bbe5 100%);
+    color: #373644;
+ }
+ 
+ .box{
+   height: 50px;
+   width: 50px;
+   margin: 25px;
+   grid-area: colors;
+ }
+ .box:first-of-type{
+   background-color: rgb(124, 51, 29);
+ }
+ .box:nth-of-type(2){
+   background-color: red;
+ }
+ .box:nth-of-type(3){
+   background-color: rgb(83, 14, 14);
+ }
+ .box:nth-of-type(4){
+   background-color: lawngreen;
+ }
+ .box:nth-of-type(5){
+   background-color: darkgreen;
+ }
+ .box:nth-of-type(6){
+   background-color: rgb(255, 230, 0);
+ }
+ .box:nth-of-type(7){
+   background-color: rgb(255, 153, 0);
+ }
+
+.main-box{
+   display: grid;
+   grid-template-areas: "title title title"
+      "num colors canva"
+      "bottom bottom bot";
+}
+
+header{
+   grid-area: title;
+}
+
+
+.instructions {
+    font-size: 0.8em;
+    color: black;
+    text-align: center;
+    margin:0 10px 0 16px;
+    grid-area: bottom;
+ }
+
+ .right-column {
+   display: grid;
+   grid-area: canva;
+    padding-right: 16px;
+ }
+ 
+ canvas {
+    outline: 1px solid #ddd;
+    background: #f4f8f9;
+ }
+ 
+ .button{
+   display: grid;
+   grid-area: bot;
+ }

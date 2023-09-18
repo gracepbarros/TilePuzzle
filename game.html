@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tile Puzzle</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="PuzzleGame.js"></script>
+</head>
+<body>
+    <div class="main-box">
+        <header>
+           <h1>Tile Puzzle</h1>
+        </header>
+        <div class="left-column">
+            <label>COLORS</label>
+            <div class="colors-container">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="colors-container_selection"></div>
+            </div>
+        </div>
+        <div class="right-column">
+            <!-- The main canvas -->
+            <canvas width="480" height="480">
+            </canvas>
+            <p class="instructions">
+               <strong>Click</strong> to paint.
+               <strong>Shift+Click</strong> to remove.
+            </p>
+         </div>
+        <div>
+            <button class="button" onclick="clearCanvas()">Clear Canvas</button>
+            <button class="button" onclick="exportImage()">Export Image</button>
+       </div>
+     </div> 
+</body>
+</html>
+
